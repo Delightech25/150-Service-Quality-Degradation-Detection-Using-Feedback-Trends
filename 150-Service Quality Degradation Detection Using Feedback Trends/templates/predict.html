@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+
+<div class="login">
+
+<h2>Service Prediction</h2>
+
+<form method="POST">
+
+<textarea name="feedback"
+placeholder="Enter feedback"></textarea>
+
+<button>Predict</button>
+
+</form>
+
+<h3>{{result}}</h3>
+
+<br>
+
+<a href="/dashboard">Back</a>
+
+</div>
+
+</body>
+
+</html>
